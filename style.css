@@ -1,0 +1,316 @@
+ :root{
+     --primary-color:#e50914;
+     --dark-color:#141414;
+ }
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ body{
+     font-family: 'Arial', sans-serif;
+     -webkit-font-smoothing:antialiased;
+     background: #000;
+     color:#999;
+ }
+ ul{
+     list-style: none;
+ }
+ h1,h2,h3,h4{
+     color: #fff;
+ }
+ a{
+     color: #fff;
+     text-decoration: none;
+ }
+ p{
+     margin: 0.5rem 0;
+ }
+ /* .logo{
+     width: 15%;
+ } */
+ img{
+     width: 100%;
+ }
+ .form-text{
+padding: 15px 100px;
+border: none;
+ }
+ .form-btn{
+padding: 15px 50px;
+background: red;
+color: #fff;
+ }
+ .showcase{
+     width: 100%;
+     height: 93vh;
+     position: relative;
+     background-image: url('./assets/bg.jpg');
+     background-repeat: no-repeat;
+ }
+ .showcase::after{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     background: rgba(0,0,0, 0.6);
+     box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+ }
+ .showcase-top{
+     position: relative;
+     z-index: 2;
+     height: 90px;
+ }
+ .showcase-top img{
+     width: 170px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+ }
+ .showcase-top a{
+     position: absolute;
+     top: 50%;
+     right: 0;
+     transform: translate(-50%,-50%);
+
+ }
+ .showcase-content{
+     position: relative;
+     margin: auto;
+     display: flex;
+     z-index: 2;
+     border-bottom: 8px solid #222;
+     padding: 50px 5%;
+     margin-bottom: 0;
+     background: 0 0;
+     color: #fff;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 5rem;
+ }
+ .showcase-content h1{
+     font-weight: 700;
+     font-size: 5.2rem;
+     line-height: 1.1;
+     margin: 0 0 2rem;
+ }
+ .showcase-content p{
+     text-transform: lowercase;
+     color: #fff;
+     font-weight: 400;
+     font-size: 1.9rem;
+     line-height: 1.25;
+     margin: 0 0 2rem;
+ }
+
+ /* Tabs */
+ 
+.our-story-card{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+}
+.animation-card{
+    display: flex;
+}
+.our-story-card-text{
+    margin-top: 15%;
+     justify-content: center;
+}
+.our-story-card-text h1{
+    font-size: 40px;
+}
+.our-story-card-text p{
+  text-align: center;
+}
+.our-story-card-img{
+    margin-top: 10%;
+    position: relative;
+}
+.our-story-card-img4{
+    position: relative;
+    z-index: 999;
+}
+.our-story-animation-card-video{
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.our-story-animation-card-video1{
+    width: 100%;
+    height: 100%;
+    max-width: 62%;
+    max-height: 47%;
+    position: absolute;
+    z-index: -999;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.our-story-card-video{
+    width: 100%;
+    height: 100%;
+}
+/* text styles */
+.text-xl{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.text-lg{
+     font-size: 1rem;
+     margin-bottom: 1rem;
+     color: #fff;
+}
+.text-center{
+    text-align: center;
+ 
+}
+.text-dark{
+    color: #999;
+}
+ /* Button */
+
+ .btn{
+     display: inline-block;
+     background: var(--primary-color);
+     color: #fff;
+     padding: 0.4rem 1.3rem;
+     font-size: 1rem;
+     text-align: center;
+     border: none;
+     cursor: pointer;
+     margin-right: 0.5rem;
+     outline: none;
+     box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
+     border-radius: 2px;
+ }
+ .btn:hover{
+     opacity: 0.9;
+     
+ }
+ .btn-rounded{
+     border-radius: 5px;
+ }
+ .btn-xl{
+     font-size: 2rem;
+     padding: 1.5rem 2.1rem;
+     text-transform: uppercase;
+ }
+ .btn-lg{
+     font-size: 1rem;
+     padding: 0.8rem 1.3rem;
+     text-transform: uppercase;
+ }
+
+ /* ****************************** */
+ .faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 60%; 
+   padding: auto;
+   
+}
+.active,
+.faq-page:hover {
+    background-color: #303030;
+    border-radius: 10px;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: #303030;
+    border-radius: 4px;
+    display: none;
+    overflow: hidden;
+}
+/* .faq-body p{
+    color: #000;
+} */
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+.site-footer{
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+}
+ul.structural{
+    margin: 0;
+    padding: 0;
+}
+.footer-links{
+    max-width: 1000px;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer-link-item{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 24%;
+    padding-right: 12px;
+    vertical-align: top;
+}
