@@ -10,34 +10,31 @@
     <title>Netflix-clone</title>
 </head>
 <body >
-    <div class="header"></div>
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner diagonal part-1"></div>
-      <div class="spinner horizontal"></div>
-      <div class="spinner diagonal part-2"></div>
-    </label>
-    <div id="sidebarMenu">
-      <ul class="sidebarMenuInner">
-        <li>NetFlix <span>Home</span></li>
-        <li><a href="./index.html" target="_blank">About</a></li>
-        <li><a href="https://instagram.com/plavookac" target="_blank">Contact</a></li>
-        <li><a href="https://twitter.com/plavookac" target="_blank">Song</a></li>
-        <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">YouTube</a></li>
-        <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Linkedin</a></li>
-      </ul>
+  <header class="showcase">
+  <div class="showcase-top">
+    <img class="logo" src="./assets/logo2.png" alt="logo">
+    <a href="index.html">home</a> 
+    <div class="search-container">
+      <form class="form-inline text-center">
+          <input type="text" class="form-control w-50" id="text" placeholder="search...">
+          <input id='submit' type="submit" class="form-control" value="search" > 
+      </form>
+  </div>
+  </div>
+  </header>
+  <div id="YouTube">
+    <iframe id="video" frameborder="0" class="p-5" width="100%" height="500"></iframe>
+  </div>
+  <hr>
+  <hr class="hr-line"> 
+    <div class="container-output">
+      <div id="my-div">
+      </div>
     </div>
-    <div class="container mt-2">
-        <form class="form-inline text-center">
-            <input type="text" class="form-control w-50" id="text" placeholder="search...">
-            <input id='submit' type="submit" class="form-control" value="search" > 
-        </form>
-        <div id="my-div"></div>
-    </div>
-    <section class="our-story-card">
-      <div class="animation-card">
-          <div class="our-story-card-text">
-          </div>
+ 
+  
+    <!-- <div class="our-story-card-text">
+          
           <div class="site-footer">
                <p>Questions? Call 000-800-040-1843</p>
              <ul class="footer-links structural">
@@ -61,7 +58,7 @@
    </section>
    <div class="container">
       <p class="text-center">Netflix-Clone</p>
-   </div>
+   </div> -->
     <script src="./script1.js"></script>
 </body>
 </html>
